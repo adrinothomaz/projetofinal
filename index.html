@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitalização de Documentos - DigitalizaDoc</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">DigitalizaDoc</div>
+        <nav class="nav-links">
+            <a href="planos.html">Planos</a>
+            <a href="#" onclick="mostrarContato()">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="hero">
+            <h1>Transforme Seus Documentos em Dados Digitais</h1>
+            <p>Reduza custos, aumente a segurança e organize suas informações de forma eficiente. Nossa solução oferece automação completa para digitalização e gerenciamento de documentos.</p>
+            <p>Com a DigitalizaDoc, você garante:</p>
+            <ul>
+                <li><strong>Eficiência Operacional:</strong> Reduza o tempo de busca, centralize informações e automatize processos.</li></BR>
+                <li><strong>Redução de Custos:</strong> Economize com papel, impressão e armazenamento físico.</li><BR>
+                <li><strong>Acesso Remoto:</strong> Acesse documentos de qualquer lugar, facilitando o trabalho remoto e a colaboração.</li><BR>
+                <li><strong>Segurança Aprimorada:</strong> Proteja dados com criptografia, backups e controles de acesso.</li><BR>
+                <li><strong>Sustentabilidade:</strong> Diminua o impacto ambiental ao reduzir o uso de papel.</li><BR>
+                <li><strong>Conformidade Legal:</strong> Facilite auditorias e esteja em conformidade com regulamentações.</li><BR>
+            </ul>
+            <a href="planos.html" class="btn">Conheça Nossos Planos</a>
+        </section>
+
+        <!-- Seção de Contato (oculta inicialmente) -->
+        <section id="contato" class="contato hidden">
+            <h2>Entre em Contato</h2>
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 DigitalizaDoc. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function mostrarContato() {
+            document.getElementById('contato').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

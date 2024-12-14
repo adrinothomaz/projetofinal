@@ -1,0 +1,326 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #8A2BE2;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+/* Seção Hero */
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    color: #8A2BE2;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: disc;
+    text-align: left;
+    margin: 1rem auto;
+    max-width: 500px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #8A2BE2;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #6a1bb7;
+}
+
+/* Seção de Contato */
+.contato {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 500px;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato input,
+.contato textarea,
+.contato button {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contato button {
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    background-color: #6a1bb7;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Rodapé */
+footer {
+    background-color: #8A2BE2;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Plano Principal */
+.planos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 3rem;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Centraliza e adapta em várias resoluções */
+}
+
+.planos p {
+    text-align: center  ;
+}
+
+.plano {
+    background-color: #fff;
+    padding: 3rem; /* Aumentando o padding para mais espaço interno */
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Aumentando o tamanho para mais conteúdo */
+    height: 400px; /* Tornando o quadrado mais retangular */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    margin: 10px; /* Adiciona espaçamento entre os planos */
+}
+
+.plano h3 {
+    font-size: 28px; /* Aumentando o tamanho do texto para o título */
+}
+
+.plano p {
+    font-size: 18px; /* Aumentando o tamanho do texto para a descrição */
+    line-height: 1.6; /* Aumentando o espaçamento entre linhas para maior legibilidade */
+    margin-top: 1rem;
+}
+
+.plano a {
+    text-decoration: none;
+    color: #4C4C4C;
+}
+
+.plano:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.plano3 {
+    background-color: #fff;
+    padding: 3rem; /* Aumentando o padding para mais espaço interno */
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Aumentando o tamanho para mais conteúdo */
+    height: 500px; /* Tornando o quadrado mais retangular */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    margin: 10px; /* Adiciona espaçamento entre os planos */
+}
+
+.plano3 h3 {
+    font-size: 28px; /* Aumentando o tamanho do texto para o título */
+}
+
+.plano3 p {
+    font-size: 18px; /* Aumentando o tamanho do texto para a descrição */
+    line-height: 1.6; /* Aumentando o espaçamento entre linhas para maior legibilidade */
+    margin-top: 1rem;
+}
+
+.plano3 a {
+    text-decoration: none;
+    color: #4C4C4C;
+}
+
+.plano3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.plano p,
+.plano3 p {
+    color: #333;  /* Cor cinza escuro para o texto */
+}
+
+/* Detalhes dos Planos */
+.plano-detalhe {
+    padding: 3rem;
+    background-color: #fff;
+    margin: 2rem auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para Links de Planos */
+a {
+    text-decoration: none;
+    color: #8A2BE2;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffd700;
+}
+
+
+footer {
+    background-color: #8A2BE2; /* Cor roxa */
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+
+footer a {
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8A2BE2;
+    padding: 1rem 2rem;
+}
+
+.inicio-link {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.inicio-link:hover {
+    color: #ffd700;
+}
+
+.ul {
+    text-align: left;
+}
+
+/* Estilo para o formulário de consulta */
+.consulta-formulario {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.consulta-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.consulta-formulario input,
+.consulta-formulario button {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.consulta-formulario button {
+    background-color: #8A2BE2;
+    color: white;
+    cursor: pointer;
+}
+
+.consulta-formulario button:hover {
+    background-color: #6a1bb7;
+}
+
+.consulta-formulario label {
+    font-size: 1.1rem;
+    text-align: left;
+}
